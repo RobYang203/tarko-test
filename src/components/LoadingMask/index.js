@@ -1,16 +1,15 @@
-import { isEmpty } from 'lodash-es';
 import React from 'react';
-import { useSelector } from 'react-redux';
 import classNames from 'classnames/bind';
 import css from './index.module.css';
+import { useFetching } from 'contexts/FetchingProvider';
 
 function LoadingMask() {
   const classes = classNames.bind(css);
-  const fetchingTypes = useSelector(({ setting }) => setting.fetchingTypes);
+  const { fetchingTypes } = useFetching();
 
-  if (isEmpty(fetchingTypes)) {
+  if (fetchingTypes.size !== 0) {
     document.body.style.overflow = 'auto';
-    
+
     return null;
   } else {
     document.body.style.overflow = 'hidden';

@@ -9,7 +9,7 @@ function TextInput({ className, maxWidth, value, ...props }) {
     <input
       {...props}
       value={value ?? ''}
-      className={classes(className, 'root')}
+      className={classes(className, 'root', { 'max-width': maxWidth })}
     />
   );
 }

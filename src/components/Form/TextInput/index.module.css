@@ -1,8 +1,13 @@
 .root {
-  height: 30px;
+  height: 40px;
   background: #fff;
   border-radius: 4px;
   padding: 5px 10px;
   min-width: 100px;
   border: 1px solid var(--secondary-main-color);
+  box-sizing: border-box;
+}
+
+.max-width {
+  width: 100%;
 }

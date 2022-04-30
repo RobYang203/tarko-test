@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames/bind';
 import BaseButton from './BaseButton';
+import classNames from 'classnames/bind';
 import css from './index.module.css';
 
 function Button({ children, color, variant, maxWidth, className, ...props }) {

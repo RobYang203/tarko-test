@@ -1,0 +1,47 @@
+.root{
+  flex-basis: 47%;
+  flex-grow: 0;
+}
+
+@media screen and (max-width:768px) {
+  .root{
+    flex-basis: 100%;
+    flex-grow: 0;
+  }
+}
+
+.header{
+  color: var(--text-primary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title{
+  margin:20px 0;
+  color: var(--text-primary-color);
+  text-transform: uppercase;
+}
+
+.body{
+  font-size: 14px;
+  color: var(--text-secondary-color);
+  width: 280px;
+}
+.content{
+  margin:20px 0;
+  line-clamp: 2;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  box-orient:vertical;
+  display:-webkit-box;
+}
+
+.button-group{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  justify-content:space-between;
+  align-items:center;
+  gap: 20px;
+}
