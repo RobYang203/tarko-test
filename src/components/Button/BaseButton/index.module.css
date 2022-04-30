@@ -1,0 +1,10 @@
+.root {
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  background: #ffffff00;
+  color: var(--text-primary-color);
+  width: 100%;
+}
+
+

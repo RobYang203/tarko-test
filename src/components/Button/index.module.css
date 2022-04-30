@@ -1,0 +1,70 @@
+
+.variant-contained:disabled {
+  background-color: var(--grey-dark-color);
+  color: #d1d1d1;
+}
+
+.variant-contained {
+  border-radius: 4;
+  border: 0;
+  padding: 10px 20px;
+}
+
+.color-info {
+  background: var(--info-main-color);
+  color: var(--info-contrast-text-color);
+  border-color: var(--info-main-color);
+}
+
+.color-error {
+  background: var(--error-main-color);
+  color: var(--error-contrast-text-color);
+  border-color: var(--error-main-color);
+}
+
+.color-grey {
+  background: var(--grey-main-color);
+  color: var(--grey-contrast-text-color);
+  border-color: var(--grey-main-color);
+}
+
+
+.variant-outlined {
+  background: #ffffff00;
+  border-radius: 4px;
+  padding: 10px 20px;
+  border-style: solid;
+  border-width: 1px;
+  color: #000;
+}
+
+.variant-outlined.color-info {
+  color: var(--info-dark-color);
+}
+.variant-outlined.color-error {
+  color: var(--error-dark-color);
+}
+.variant-outlined.color-grey {
+  color: var(--grey-dark-color);
+}
+
+
+.variant-contained {
+  border-radius: 4px;
+  border: 0;
+  padding: 10px 20px;
+}
+
+.variant-contained:hover.color-info {
+  background-color: var(--info-dark-color);
+}
+.variant-contained:hover.color-error {
+  background-color: var(--error-dark-color);
+}
+.variant-contained:hover.color-grey {
+  background-color: var(--grey-dark-color);
+}
+
+.max-width {
+  width: 100%;
+}

@@ -1,0 +1,17 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: noWrap;
+  align-items:flex-start;
+  gap: 5;
+}
+
+.label{
+  font-size: 16px;
+  color: var(--grey-contrast-text-color)
+}
+
+.error{
+  padding-left: 2px;
+  color: var(--error-main-color)
+}

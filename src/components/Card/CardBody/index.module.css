@@ -1,0 +1,5 @@
+.root {
+  order: -2;
+  flex: 1;
+  width: 100%;
+}
