@@ -3,16 +3,21 @@ import { Route } from 'react-router-dom';
 import LoadingMask from 'components/LoadingMask';
 import MainLayout from 'layouts/MainLayout';
 import FetchingProvider from 'contexts/FetchingProvider';
+import MessageCenter from 'components/MessageCenter';
+import MessageProvider from 'contexts/MessageProvider';
 
 function App() {
   return (
     <div className='App'>
-      <FetchingProvider>
-        <Switch>
-          <Route path='/' component={MainLayout} />
-        </Switch>
-        <LoadingMask />
-      </FetchingProvider>
+      <MessageProvider>
+        <FetchingProvider>
+          <Switch>
+            <Route path='/' component={MainLayout} />
+          </Switch>
+          <LoadingMask />
+          <MessageCenter />
+        </FetchingProvider>
+      </MessageProvider>
     </div>
   );
 }

@@ -1,23 +1,31 @@
 import React, { useContext, useMemo, useState } from 'react';
 
 const FetchingContext = React.createContext({
-  fetchingTypes: new Map(),
+  fetchingTypes: {},
   addFetching: () => {},
   cancelFetching: () => {},
 });
 
 export const FetchingProvider = ({ children }) => {
-  const [fetchingTypes, setFetchingTypes] = useState(new Map());
+  const [fetchingTypes, setFetchingTypes] = useState({});
 
   const addFetching = (fetchingTarget) => {
-    fetchingTypes.set(fetchingTarget, 'LOADING');
-
-    setFetchingTypes(fetchingTypes);
+    setFetchingTypes((fetchingTypes) => {
+      return {
+        ...fetchingTypes,
+        [fetchingTarget]: 'LOADING',
+      };
+    });
   };
 
   const cancelFetching = (fetchingTarget) => {
-    fetchingTypes.delete(fetchingTarget);
-    setFetchingTypes(fetchingTypes);
+    delete fetchingTypes[fetchingTarget];
+
+    setFetchingTypes(() => {
+      return {
+        ...fetchingTypes,
+      };
+    });
   };
 
   const value = useMemo(() => {

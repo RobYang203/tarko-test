@@ -6,8 +6,8 @@ function ContactRow({ title, content }) {
   const classes = classNames.bind(css);
   return (
     <p className={classes('root')}>
-      <div className={classes('title')}>{title} : </div>
-      <div>{content}</div>
+      <span className={classes('title')}>{title} : </span>
+      <span>{content}</span>
     </p>
   );
 }

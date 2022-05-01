@@ -82,6 +82,10 @@
   background-color: #ffffff00;
 }
 
+.variant-icon.color-primary {
+  border-color: var(--primary-main-color);
+  color: var(--primary-main-color);
+}
 .variant-icon.color-info {
   border-color: var(--info-main-color);
   color: var(--info-main-color);

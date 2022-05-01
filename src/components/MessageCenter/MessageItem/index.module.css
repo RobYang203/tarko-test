@@ -1,0 +1,25 @@
+.item {
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: .5s ease-in-out;
+  margin-right: 10px;
+  transform: translateX(300px);
+}
+
+.color-info {
+  background-color: var(--info-main-color);
+  color: var(--info-contrast-text-color);
+}
+
+.color-error {
+  background-color: var(--error-main-color);
+  color: var(--error-contrast-text-color);
+}
+
+
+.item-move{
+  transform: translateX(0px);
+}

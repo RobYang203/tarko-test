@@ -1,30 +1,33 @@
 .root {
   top: 0;
   left: 0;
-  height: 100;
-  background:#fff;
-  width:calc(100vw - 184px);
-  position:fixed;
+  height: 50px;
+  background: var(--primary-contrast-text-color);
+  width: calc(100vw - 184px);
+  position: fixed;
   padding: 0 92px;
-  display:flex;
-  align-items:center;
-  flex-direction:row;
-  flex-wrap:nowrap;
-  justify-content:space-between;
-  border-bottom:1px solid #EDEDED;
-};
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #ededed;
+}
+
+.title {
+  color: var(--primary-main-color);
+}
 
 .button-group {
   flex-basis: 250;
   flex-grow: 0;
   flex-shrink: 1;
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-  flex-direction:wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-direction: wrap;
+}
 
-};
-
-.button-group > button{
+.button-group > button {
   margin-right: 10;
 }
